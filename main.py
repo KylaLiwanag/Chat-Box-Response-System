@@ -38,6 +38,10 @@ def check_all_mesagges(message):
     response('You\'re welcome!', ['thank', 'thanks'], single_response=True)
     response('Thank you!', ['i', 'love', 'code', 'palace'], required_words=['code', 'palace'])
 
+    # Longer responses
+    response(long.R_ADVICE, ['give', 'advice'], required_words=['advice'])
+    response(long.R_EATING, ['what', 'you', 'eat'], required_words=['you', 'eat'])
+
 
 
 
