@@ -8,6 +8,8 @@ def message_probability(user_message, recognised_words, singe_response=False, re
     for word in user_message:
         if word in recognised_words:
             message_certainty += 1
+#Calculates the percent of recognised words in a user message
+    percentage = float(message_certainty) / float(len(recognised_words))
 
 def get_response(user_input):
     split_message = re.split(r'\s+|[,;?!.-]\s*', user_input.lower())
@@ -17,3 +19,4 @@ def get_response(user_input):
 # Testing the response system
 while True:
     print('Bot: ' + get_response(input('You')))
+
