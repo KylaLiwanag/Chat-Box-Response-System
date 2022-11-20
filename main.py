@@ -1,5 +1,5 @@
 import re
-import long_response as long
+import long_r as long
 
 def message_probability(user_message, recognised_words, single_response=False, required_words=[]):
     message_certainty = 0
