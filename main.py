@@ -45,6 +45,9 @@ def check_all_mesagges(message):
     # print(highest_prob_list)
     best_match = max(highest_prob_list, key=highest_prob_list.get)
 
+    # print(f'Best match = {best_match} | Score: {highest_prob_list[best_match]}')
+    return long.unknown() if highest_prob_list[best_match] < 1 else best_match
+
 
 
 #
