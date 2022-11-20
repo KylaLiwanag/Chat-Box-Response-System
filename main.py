@@ -17,6 +17,15 @@ def message_probability(user_message, recognised_words, singe_response=False, re
             has_required_words = False
             break
 
+#Must either have the required words, or be a single response
+    if has_required_words or singe_response:
+        return int(percentage * 100)
+    else:
+        return 0
+
+def check_all_mesagges(message):
+    highest_prob_list = {}
+
 def get_response(user_input):
     split_message = re.split(r'\s+|[,;?!.-]\s*', user_input.lower())
     response = check_all_messages(split_message)
