@@ -42,6 +42,8 @@ def check_all_mesagges(message):
     response(long.R_ADVICE, ['give', 'advice'], required_words=['advice'])
     response(long.R_EATING, ['what', 'you', 'eat'], required_words=['you', 'eat'])
 
+    # print(highest_prob_list)
+    best_match = max(highest_prob_list, key=highest_prob_list.get)
 
 
 
